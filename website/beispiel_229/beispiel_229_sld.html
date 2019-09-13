@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SLD</title>
+</head>
+<body>
+<form name="formularSLD">
+
+  <p><strong>SLD_BODY</strong></p>
+
+  <textarea name="feld2" cols="140" rows="15">
+&amp;SLD_BODY=
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0" 
+    xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+    xmlns="http://www.opengis.net/sld" 
+    xmlns:ogc="http://www.opengis.net/ogc" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<NamedLayer>
+<Name>oge:SRTM</Name>
+<UserStyle>
+<FeatureTypeStyle>
+<Rule>
+<RasterSymbolizer>
+ <ColorMap>
+<ColorMapEntry color="0xAAFFAA" quantity="10" />
+<ColorMapEntry color="0x00FF00" quantity="20" />
+<ColorMapEntry color="0xFFFF00" quantity="30" />
+<ColorMapEntry color="0xFF7F00" quantity="40" />
+<ColorMapEntry color="0xBF7F00" quantity="50" />
+<ColorMapEntry color="0xBF7F3F" quantity="60" />
+</ColorMap>
+</RasterSymbolizer>
+</Rule>
+</FeatureTypeStyle>
+</UserStyle>
+</NamedLayer>
+</StyledLayerDescriptor>
+</textarea>
+</form>
+
+ <script language="javascript" type="text/javascript">
+   parent.leftFrame.onload = function(){parent.leftFrame.getValue();};
+ </script>
+ 
+</form>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SLD</title>
+</head>
+<body>
+<form name="formularSLD">
+
+  <p><strong>SLD_BODY</strong></p>
+
+  <textarea name="feld2" cols="140" rows="15">
+&amp;SLD_BODY=
+<StyledLayerDescriptor version="1.1.0">
+<NamedLayer>
+<Name>oge:points</Name>
+<UserStyle>
+<FeatureTypeStyle>
+<Rule>
+<PointSymbolizer>
+<Graphic>
+<Mark>
+<WellKnownName>star</WellKnownName>
+<Fill>
+<SvgParameter name="fill">#D09E00</SvgParameter>
+</Fill>
+</Mark>
+<Size>15</Size>
+</Graphic>
+</PointSymbolizer>
+</Rule>
+</FeatureTypeStyle>
+</UserStyle>
+</NamedLayer>
+</StyledLayerDescriptor></textarea>
+ </form>
+
+ <script language="javascript" type="text/javascript">
+   parent.leftFrame.getValue (parent.leftFrame.document.formularWMS.feld);
+   </script>
+</form>
+
+</body>
+</html>
+

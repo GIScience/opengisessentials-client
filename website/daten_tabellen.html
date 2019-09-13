@@ -1,0 +1,1360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/wps_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>WMS-SLD Beispiele</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="css/oge.css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+body {
+	background-color: #F4F4F5;
+}
+body,td,th {
+	color: #000000;
+}
+.Stil5 {
+	font-family: "Brush Script MT";
+	font-size: 45px;
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+.Stil17 {color: #ECE9D8}
+#apDiv1 {
+	position:absolute;
+	width:825px;
+	height:124px;
+	z-index:3;
+	left: 168px;
+	top: 10px;
+}
+-->
+</style>
+<meta name="Keywords" content="OpenDEM, Digital Elevation Model, Digital Terrain Model, Digital Surface Model" />
+<meta name="Description" content="OpenDEM - The portal for sharing Free Digital Elevation Models and XYZ height datasets" />
+</head>
+
+<body>
+
+<!-- InstanceBeginEditable name="EditRegion" -->
+<div id="caption">
+  <h2>Daten Tabellen:</h2>
+  <p style="font-weight:bold">Flächengeometrien: oge:natural</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+    <col width="85" />
+    <col width="112" />
+    <col width="87" />
+    <tr height="17">
+      <td height="17" width="85" style="font-weight:bold">osm_id</td>
+      <td width="112"style="font-weight:bold">name</td>
+      <td width="87"style="font-weight:bold">type</td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">25482426</div></td>
+      <td><div align="left">Sophienhoehe</div></td>
+      <td><div align="left">park</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">46172184</div></td>
+      <td><div align="left"></div></td>
+      <td><div align="left">park</div></td>
+    </tr>
+  </table>
+  <p style="font-weight:bold">Punktgeometrien: oge:points</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+    <col width="85" />
+    <col width="112" />
+    <col width="87" />
+    <tr height="17">
+      <td height="17" width="85" style="font-weight:bold"><div align="left">osm_id</div></td>
+      <td width="232" style="font-weight:bold"><div align="left">name</div></td>
+      <td width="128" style="font-weight:bold"><div align="left">type</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601123959</div></td>
+      <td><div align="left">KÖ-33</div></td>
+      <td><div align="left">pub</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601123955</div></td>
+      <td><div align="left">Altstadtmeile</div></td>
+      <td><div align="left">pub</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601113499</div></td>
+      <td><div align="left">El Gecco</div></td>
+      <td><div align="left">restaurant</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601113492</div></td>
+      <td><div align="left">Möllendiek</div></td>
+      <td><div align="left">pub</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601116321</div></td>
+      <td><div align="left">Christliche Gemeinde Bergstrasse</div></td>
+      <td><div align="left">place_of_worship</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601113498</div></td>
+      <td><div align="left">Am Muehlenteich</div></td>
+      <td><div align="left">hotel</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">602464854</div></td>
+      <td><div align="left">Verdi</div></td>
+      <td><div align="left">restaurant</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601113500</div></td>
+      <td><div align="left">Da Pino</div></td>
+      <td><div align="left">restaurant</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601113501</div></td>
+      <td><div align="left">Adler</div></td>
+      <td><div align="left">cafe</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601113493</div></td>
+      <td><div align="left">Cafe Majier</div></td>
+      <td><div align="left">pub</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">1093817067</div></td>
+      <td><div align="left">Deutsche Bank</div></td>
+      <td><div align="left">bank</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">602438145</div></td>
+      <td><div align="left"></div></td>
+      <td><div align="left">telephone</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">1316053138</div></td>
+      <td><div align="left"></div></td>
+      <td><div align="left">fountain</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601113495</div></td>
+      <td><div align="left">Maerkische Apotheke</div></td>
+      <td><div align="left">pharmacy</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">601113494</div></td>
+      <td><div align="left">Hirsch Apotheke</div></td>
+      <td><div align="left">pharmacy</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">602438146</div></td>
+      <td><div align="left"></div></td>
+      <td><div align="left">telephone</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">1326929293</div></td>
+      <td><div align="left">Eiscafe Conti</div></td>
+      <td><div align="left">cafe</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">1366126791</div></td>
+      <td><div align="left"></div></td>
+      <td><div align="left">cafe</div></td>
+    </tr>
+    <tr height="17">
+      <td height="17" align="right"><div align="left">272574308</div></td>
+      <td><div align="left"></div></td>
+      <td><div align="left">post_office</div></td>
+    </tr>
+  </table>
+  <p style="font-weight:bold">Liniengeometrien (Strassen):oge:roads</p>
+<table border="1" cellpadding="0" cellspacing="0">
+ <col width=80/>
+ <col width=204/>
+ <col width=80/>
+ <col width=106/>
+ <col width=80/>
+ <col />
+ <tr height="17">
+  <td height="17"  width=80  style="font-weight:bold">gid</td>
+  <td  width=80  style="font-weight:bold">osm_id</td>
+  <td  width=204  style="font-weight:bold">name</td>
+  <td  width=180  style="font-weight:bold">ref</td>
+  <td  width=106  style="font-weight:bold">type</td>
+  <td  width=80  style="font-weight:bold">oneway</td>
+  <td  width=80  style="font-weight:bold">bridge</td>
+  <td  width=80  style="font-weight:bold">maxspeed</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >1</td>
+  <td >10508181</td>
+  <td >Neumarkt</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >2</td>
+  <td >25033550</td>
+  <td >Roemerstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >3</td>
+  <td >25034117</td>
+  <td >Drosselstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >4</td>
+  <td >25034463</td>
+  <td ></td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >5</td>
+  <td >25034475</td>
+  <td >Kirchplatz</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17" >
+  <td height="17">6</td>
+  <td >25034562</td>
+  <td >Max-Klein-Strasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">7</td>
+  <td >25035242</td>
+  <td >Hauptstrasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">8</td>
+  <td >25092791</td>
+  <td >Windmuehlenstrase</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">9</td>
+  <td >25299444</td>
+  <td >Weilenhaeuschenstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >10</td>
+  <td >25299451</td>
+  <td >Bergstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">11</td>
+  <td >25299458</td>
+  <td >Körnerstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >12</td>
+  <td >25454376</td>
+  <td >Ehrenberger Strasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >13</td>
+  <td >36110947</td>
+  <td >Schulstrasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">14</td>
+  <td >43153275</td>
+  <td >Kirchstrasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >15</td>
+  <td >43153276</td>
+  <td >Hauptstrasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >16</td>
+  <td >43153277</td>
+  <td >Altmarkt</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">17</td>
+  <td >43153278</td>
+  <td >Bergstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >18</td>
+  <td >43599136</td>
+  <td >Lohmannsgasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >19</td>
+  <td >43599137</td>
+  <td >Herbergstrasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >20</td>
+  <td >43599138</td>
+  <td >Fronhofstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >21</td>
+  <td >43599139</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">22</td>
+  <td >43601521</td>
+  <td >Altmarkt</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >23</td>
+  <td >43601523</td>
+  <td ></td>
+  <td ></td>
+  <td >service</td>
+  <td >1</td>
+  <td >1</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >24</td>
+  <td >43601524</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >25</td>
+  <td >43601525</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >26</td>
+  <td >43601526</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">27</td>
+  <td >43601527</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >28</td>
+  <td >43601528</td>
+  <td ></td>
+  <td ></td>
+  <td >steps</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >29</td>
+  <td >43601529</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >30</td>
+  <td >43601530</td>
+  <td ></td>
+  <td ></td>
+  <td >steps</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >31</td>
+  <td >43601534</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >32</td>
+  <td >43601535</td>
+  <td ></td>
+  <td ></td>
+  <td >path</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >33</td>
+  <td >43601536</td>
+  <td >Leistrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >34</td>
+  <td >43620582</td>
+  <td >Casinostrasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >35</td>
+  <td >44431704</td>
+  <td >Apothekergaesschen</td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >36</td>
+  <td >44431709</td>
+  <td >Kusengaesschen</td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >37</td>
+  <td >44445527</td>
+  <td >Koelner Strasse</td>
+  <td >B483</td>
+  <td >primary</td>
+  <td >0</td>
+  <td >0</td>
+  <td >50</td>
+ </tr>
+ <tr height="17">
+  <td height="17">38</td>
+  <td >44908819</td>
+  <td >Untermauerstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >39</td>
+  <td >44908939</td>
+  <td >Kirchstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">40</td>
+  <td >44909034</td>
+  <td >Maerkischer Platz</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >41</td>
+  <td >45189347</td>
+  <td ></td>
+  <td ></td>
+  <td >service</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">42</td>
+  <td >45189348</td>
+  <td >Suedstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >43</td>
+  <td >45189447</td>
+  <td >Herbergstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >44</td>
+  <td >45189448</td>
+  <td >Fronhofstrasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >45</td>
+  <td >45189500</td>
+  <td >Westfalendamm</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >46</td>
+  <td >45189554</td>
+  <td >Schulstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >47</td>
+  <td >45189822</td>
+  <td >Hofgasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >48</td>
+  <td >45189833</td>
+  <td >Hofgasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >49</td>
+  <td >45190164</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >50</td>
+  <td >45190165</td>
+  <td >Lohmannsgasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >51</td>
+  <td >45397203</td>
+  <td >Untermauerstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">52</td>
+  <td >45397204</td>
+  <td >Buergerplatz</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >53</td>
+  <td >46172075</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >54</td>
+  <td >46172080</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >55</td>
+  <td >46172081</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >56</td>
+  <td >46172186</td>
+  <td >Untermauerstrasse</td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >57</td>
+  <td >81351379</td>
+  <td ></td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >58</td>
+  <td >91742098</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17">59</td>
+  <td >92309032</td>
+  <td ></td>
+  <td ></td>
+  <td >pedestrian</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >60</td>
+  <td >92675869</td>
+  <td ></td>
+  <td ></td>
+  <td >service</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >61</td>
+  <td >92680398</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >62</td>
+  <td >93494907</td>
+  <td ></td>
+  <td ></td>
+  <td >steps</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >63</td>
+  <td >93494923</td>
+  <td ></td>
+  <td ></td>
+  <td >path</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >64</td>
+  <td >93495121</td>
+  <td ></td>
+  <td ></td>
+  <td >service</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >65</td>
+  <td >93498872</td>
+  <td ></td>
+  <td ></td>
+  <td >steps</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >66</td>
+  <td >94091638</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >67</td>
+  <td >94091643</td>
+  <td ></td>
+  <td ></td>
+  <td >steps</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >68</td>
+  <td >94531603</td>
+  <td >Hauptstrasse</td>
+  <td ></td>
+  <td >residential</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >69</td>
+  <td >105893072</td>
+  <td ></td>
+  <td ></td>
+  <td >path</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >70</td>
+  <td >105893081</td>
+  <td >Obermauerstrasse</td>
+  <td >B483</td>
+  <td >primary</td>
+  <td >0</td>
+  <td >0</td>
+  <td >50</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >71</td>
+  <td >105893083</td>
+  <td >Obermauerstrasse</td>
+  <td >B483</td>
+  <td >primary</td>
+  <td >0</td>
+  <td >0</td>
+  <td >50</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >72</td>
+  <td >109738115</td>
+  <td ></td>
+  <td ></td>
+  <td >steps</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >73</td>
+  <td >111529149</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >74</td>
+  <td >111529150</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ <tr height="17">
+  <td height="17" >75</td>
+  <td >111529153</td>
+  <td ></td>
+  <td ></td>
+  <td >footway</td>
+  <td >0</td>
+  <td >0</td>
+  <td >0</td>
+ </tr>
+ </table>
+<!--vMultilayer Tabellen-->
+<p style="font-weight:bold">Tabellen der Multilayer</p>
+
+<p style="font-weight:bold">Brücken: oge:bridges</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+ <col width="80" />
+ <col width="215" />
+ <col width="378" />
+ <tr height="17">
+       <td width="80" style="font-weight:bold">fid</td>
+       <td width="215" style="font-weight:bold">name</td>
+ </tr>
+    <tr height="17">
+    <td height="17" align="right"><div align="left">110</div></td>
+    <td><div align="left">Cam Bridge</div></td>
+    </tr>
+</table>
+
+<p style="font-weight:bold">Gebäude: oge:buildings</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+ <col width="80" />
+ <col width="215" />
+ <col width="378" />
+ <col width="1410" />
+ <tr height="17">
+     <td width="80" style="font-weight:bold">fid</td>
+     <td width="215" style="font-weight:bold">address</td>
+ </tr>
+ <tr height="17" >
+  <td align="right"><div align="left">113</div></td>
+  <td><div align="left">123 Main Street</div></td>
+ </tr>
+ <tr height="17" >
+  <td align="right"><div align="left">114</div></td>
+  <td><div align="left">215 Main Street</div></td>
+ </tr>
+ </table>
+ 
+ <p style="font-weight:bold">Straßenunterteilungen: oge:divided_routes</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+ <col width="80" span="3"/>
+ <col width="1789" />
+ <tr height="17">
+  <td height="17" width="80" style="font-weight:bold">fid</td>
+  <td width="80" style="font-weight:bold">name</td>
+  <td width="80" style="font-weight:bold">num_lanes</</td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left" >119</div></td>
+  <td><div align="left">Route 75</div></td>
+  <td><div align="left">4</div></td>
+ </tr>
+</table>
+
+ <p style="font-weight:bold">Wälder: oge:forests</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+<col width="80"/>
+ <col width="100"/>
+ <col width="1789"/>
+ <tr height="17">
+    <td height="17" width="80" style="font-weight:bold">fid</td>
+    <td width="100" style="font-weight:bold">name</td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">109</div></td>
+  <td> <div align="left">Green Forest</div></td>
+ </tr>
+ </table>
+
+
+
+ <p style="font-weight:bold">Seen: oge:lakes</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+ <col width="80" span=2/>
+ <col width="266"/>
+ <tr height="17">
+  <td height="17" style="font-weight:bold">fid</td>
+  <td><div align="left" style="font-weight:bold">name</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">101</div></td>
+  <td><div align="left">BLUE LAKE</div></td>
+ </tr>
+ </table>
+ 
+  <p style="font-weight:bold">Kartenfeldrandlinie: oge:map_neatlines</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+ <col width="80"/>
+ <col width="248"/>
+ <tr height="17">
+  <td height="17" style="font-weight:bold">fid</td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">115</div></td>
+ </tr>
+ </table>
+ 
+   <p style="font-weight:bold">Benannte Orte: oge:named_places</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+  <col width="80" span=3/>
+ <tr height="17">
+  <td height="17" style="font-weight:bold">fid</td>
+  <td style="font-weight:bold">name</td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">117</div></td>
+  <td ><div align="left">Ashton</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">118</div></td>
+  <td ><div align="left">Goose Island</div></td>
+  </table>
+
+  
+ <p style="font-weight:bold">Teiche: oge:ponds</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+ <col width="50"/>
+ <col width="62"/>
+ <col width="172"/>
+ <col width="1789"/>
+ <tr height="17">
+  <td height="17" style="font-weight:bold">fid</td>
+  <td style="font-weight:bold">name</td>
+  <td style="font-weight:bold">type</td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">120</div></td>
+  <td> </td>
+  <td> <div align="left">Stock Pond</div></td>
+ </tr>
+ </table>
+ 
+  <p style="font-weight:bold">Straßensegmente: oge:road_segments</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+ <col width="70"/>
+ <col width="189">
+ <col width="80">
+ <col width="1365">
+ <tr height="17">
+  <td height="17" width="80" style="font-weight:bold">fid</td>
+  <td  width="189" style="font-weight:bold">name</td>
+  <td  width="80" style="font-weight:bold">aliases</td>
+  <td  width="80" style="font-weight:bold">num_lanes</td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">102</div></td>
+  <td ><div align="left">Route 5</div></td>
+  <td ></td>
+  <td ><div align="left">2</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">103</div></td>
+  <td ><div align="left">Route 5</div></td>
+  <td ><div align="left">Main Street</div></td>
+  <td ><div align="left">4</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">104</div></td>
+  <td ><div align="left">Route 5</div></td>
+  <td ></td>
+  <td ><div align="left">2</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">105</div></td>
+  <td ><div align="left">Main Street</div></td>
+  <td ></td>
+  <td ><div align="left">4</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">106</div></td>
+  <td ><div align="left">Dirt Road by Green Forest</div></td>
+  <td ></td>
+  <td ><div align="left">1</div></td>
+ </tr>
+ </table>
+ 
+
+ 
+ <p style="font-weight:bold">Fließgewässer: oge:streams</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+  	 <tr height="17" >
+  <td height="17" style="font-weight:bold">fid</td>
+  <td  style="font-weight:bold">name</td>
+ </tr>
+ <tr height="17">
+  <td height="17">111</td>
+  <td>Cam Stream</td>
+ </tr>
+ <tr height="17">
+  <td height="17">112</td>
+  <td></td>
+ </tr>
+ </table>
+ 
+  <p style="font-weight:bold">Geometriespalten: oge:geometry_columns</p>
+  <table border="1" cellpadding="0" cellspacing="0">
+ <col width="148"/>
+ <col width="138"/>
+ <col width="140"/>
+ <col width="141"/>
+ <col width="80"/>
+ <col width="124"/>
+ <tr height="17"/>
+  <td height="17" width="80" style="font-weight:bold">f_table_schema</td>
+  <td  width="138" style="font-weight:bold">f_table_name</td>
+  <td  width="140" style="font-weight:bold">f_geometry_column</td>
+  <td  width="141" style="font-weight:bold">coord_dimension</td>
+  <td  width="80" style="font-weight:bold">srid</td>
+  <td  width="124" style="font-weight:bold">type</td>
+ </tr>
+ <tr height="17"/>
+  <td height="17"><div align="left">public</div></td>
+  <td ><div align="left">natural</div></td>
+  <td ><div align="left">the_geom</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">-1</div></td>
+  <td ><div align="left">MULTIPOLYGON</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">points</div></td>
+  <td ><div align="left">the_geom</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">-1</div></td>
+  <td ><div align="left">POINT</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">roads</div></td>
+  <td ><div align="left">the_geom</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">-1</div></td>
+  <td ><div align="left">MULTILINESTRING</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">lakes</div></td>
+  <td ><div align="left">shore</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">POLYGON</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">road_segments</div></td>
+  <td ><div align="left">centerline</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">divided_routes</div></td>
+  <td ><div align="left">centerlines</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">forests</div></td>
+  <td ><div align="left">boundary</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">bridges</div></td>
+  <td ><div align="left">position</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">streams</div></td>
+  <td ><div align="left">centerline</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">buildings</div></td>
+  <td ><div align="left">position</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">buildings</div></td>
+  <td ><div align="left">footprint</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17" ><div align="left">public</div></td>
+  <td ><div align="left">building_footprints</div></td>
+  <td ><div align="left">position</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">public</div></td>
+  <td ><div align="left">building_positions</div></td>
+  <td ><div align="left">position</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">public</div></td>
+  <td ><div align="left">ponds</div></td>
+  <td ><div align="left">shores</div></td>
+  <td ><div align="left">2</div></td>
+  <td ><div align="left">32214</div></td>
+  <td ><div align="left">GEOMETRY</div></td>
+ </tr>
+ <tr height="17">
+  <td height="17"><div align="left">public</div></td>
+  <td><div align="left">named_places</div></td>
+  <td><div align="left">boundary</div></td>
+  <td><div align="left">2</div></td>
+  <td><div align="left">32214</div></td>
+  <td><div align="left">GEOMETRY</div></td>
+ </tr>
+ </table>
+<!--von Val eingefügt Ende-->
+
+  <p>&nbsp;</p>
+</div>
+<img src="images/logo.jpg" alt="logo" width="133" height="125" />
+<div id="apDiv1">
+  <h1 align="center">Web Portrayal Services</h1>
+  <h2 align="center">Testplattform für WMS, SLD, SE &amp; FE</h2>
+  </div>
+<!-- InstanceEndEditable -->
+
+
+<link rel="stylesheet" type="text/css" href="css/cssverticalmenu.css" />
+
+<script type="text/javascript" src="js/cssverticalmenu.js">  
+
+/***********************************************
+
+* CSS Vertical List Menu- by JavaScript Kit (www.javascriptkit.com)
+* Menu interface credits: http://www.dynamicdrive.com/style/csslibrary/item/glossy-vertical-menu/ 
+* This notice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+
+***********************************************/
+
+</script>
+
+<div id="navi">
+<ul id="verticalmenu" class="glossymenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="http://www.vde-verlag.de/buecher/537502/web-portrayal-services.html" >Das Buch</a></li>
+
+
+<li><a >WMS-SLD Beispiele:</a></li>
+<li><a>Punktgeometrien</a>
+        <ul>
+    	<li><a href="beispiel_210/beispiel_210_web_client.html">Einfache Punktsymbolisierung: Seite 210</a></li>
+    	<li><a href="beispiel_210_2/beispiel_210_2_web_client.html">Punktsymbolisierung mit Online Referenz: Seite 210</a></li>
+        <li><a href="beispiel_224/beispiel_224_web_client.html">Punktsymbolisierung mit Text: Seite 224</a></li>
+    	</ul>
+</li>        
+<li><a>Liniengeometrien</a>
+        <ul>
+    	<li><a href="beispiel_213/beispiel_213_web_client.html">Einfache Liniensymbolisierung: Seite 213</a></li>
+    	<li><a href="beispiel_215/beispiel_215_web_client.html">Liniensymbolisierung mit GraphicFill Elementen: Seite 215</a></li>
+       	<li><a href="beispiel_216/beispiel_216_web_client.html">Liniensymbolisierung mit GraphicStroke Elementen: Seite 216</a></li>
+    	</ul>
+</li>       
+<li><a>Flächengeometrien</a>
+        <ul>
+    	<li><a href="beispiel_218/beispiel_218_web_client.html">Einfache Polygonsymbolisierung: Seite 218</a></li>
+      	<li><a href="beispiel_219/beispiel_219_web_client.html">Polygonsymbolisierung mit Flächenfüllmuster: Seite 219</a></li>
+        <li><a href="beispiel_196/beispiel_196_web_client.html">Polygonsymbolisierung mit Filter: Seite 196</a></li> 
+    	</ul>
+</li> 
+<li><a>Raster</a>
+        <ul>
+    	  	<li><a href="beispiel_227/beispiel_227_web_client.html">Rasterdarstellung mittles ChannelSelection: Seite 227</a></li>
+        <li><a href="beispiel_228/beispiel_228_web_client.html">Rasterdarstellung mit Kontrastdehnung: Seite 228</a></li>
+    	<li><a href="beispiel_229/beispiel_229_web_client.html">Rasterdarstelung mit ColorMap: Seite 229</a></li>
+    	</ul>
+</li>   
+<li><a>Multilayer</a>
+        <ul>
+    	<li><a href="beispiel_bunt/beispiel_bunt_web_client.html">Joe's Blue Lake Vicinity Map in Farbe</a></li>
+        <li><a href="beispiel_bw/beispiel_bw_web_client.html">Joe's Blue Lake Vicinity Map in Schwarz-weiß</a></li>
+       	</ul>
+</li>
+
+<li><a href="capabilities.html" >WMS Capabilities</a></li>
+
+<li><a href="daten_tabellen.html" >WMS Daten Tabellen</a></li>
+<li><a href="http://wiki.opengis-essentials.de/opengis-essentialsWiki/StartSeite">Wiki</a></li>
+<li><a href="#">Links</a>
+    <ul>
+    <li><a href="http://www.opengeospatial.org/standards">OGC Standards und Spezifikationen</a></li>
+    <li><a href="http://www.isotc211.org">ISO/TC 211 Geographic Information/Geomatics</a></li>
+	</ul>
+</li>
+<li><a href="hilfe.html" >Hilfe</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+<li><a href="impressum.html">Impressum</a></li>
+</ul>
+</div>
+</body>
+<!-- InstanceEnd --></html>

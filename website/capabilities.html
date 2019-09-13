@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/wps_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>WMS-SLD Beispiele</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="css/oge.css">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+body {
+	background-color: #F4F4F5;
+}
+body,td,th {
+	color: #000000;
+}
+.Stil5 {
+	font-family: "Brush Script MT";
+	font-size: 45px;
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+.Stil17 {color: #ECE9D8}
+#apDiv1 {
+	position:absolute;
+	width:825px;
+	height:124px;
+	z-index:3;
+	left: 168px;
+	top: 10px;
+}
+-->
+</style>
+<meta name="Keywords" content="OpenDEM, Digital Elevation Model, Digital Terrain Model, Digital Surface Model" />
+<meta name="Description" content="OpenDEM - The portal for sharing Free Digital Elevation Models and XYZ height datasets" />
+</head>
+
+<body>
+
+<!-- InstanceBeginEditable name="EditRegion" -->
+<div id="caption">
+  <div id="caption2">
+    <h2>WMS Capabilities:</h2>
+    <p>Auf eine Aufführung aller Referenzsysteme wurde hier verzichtet,   diese können unter der angegeben Capabilies Anfrage eingesehen werden.</p>
+    <p><strong>GetCapabilities Anfrage:</strong></p>
+    <p><a href="http://watzmann.geog.uni-heidelberg.de/oge-wms?service=WMS&version=1.1.0&request=GetCapabilities">http://watzmann.geog.uni-heidelberg.de/oge-wms?service=WMS&amp;version=1.1.0&amp;request=GetCapabilities</a></p>
+    <p><strong>GetCapabilities Antwort (ohne komplette Referenzsysteme):</strong></p>
+    <p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;<br />
+      &lt;!DOCTYPE WMT_MS_Capabilities SYSTEM &quot;http://map-server.org:8080/geoserver/schemas/wms/1.1.1/WMS_MS_Capabilities.dtd&quot;&gt;<br />
+      &lt;WMT_MS_Capabilities version=&quot;1.1.1&quot; updateSequence=&quot;88&quot;&gt;<br />
+      &lt;Service&gt;<br />
+      &lt;Name&gt;OGC:WMS&lt;/Name&gt;<br />
+      &lt;Title&gt;Portrayal Services Test WMS&lt;/Title&gt;<br />
+      &lt;Abstract&gt;A compliant implementation of WMS plus most of the SLD extension (dynamic styling).&lt;/Abstract&gt;<br />
+      &lt;KeywordList&gt;<br />
+      &lt;Keyword&gt;WFS&lt;/Keyword&gt;<br />
+      &lt;Keyword&gt;WMS&lt;/Keyword&gt;<br />
+      &lt;Keyword&gt;GEOSERVER&lt;/Keyword&gt;<br />
+      &lt;/KeywordList&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink   &quot;xlink:type=&quot;simple   &quot;xlink:href=&quot;http://map-server.org:8080/geoserver/web&quot;/&gt;<br />
+      &lt;ContactInformation&gt;<br />
+      &lt;ContactPersonPrimary&gt;<br />
+      &lt;ContactPerson&gt;Martin Over&lt;/ContactPerson&gt;<br />
+      &lt;ContactOrganization/&gt;<br />
+      &lt;/ContactPersonPrimary&gt;<br />
+      &lt;ContactPosition/&gt;<br />
+      &lt;ContactAddress&gt;<br />
+      &lt;AddressType/&gt;<br />
+      &lt;Address/&gt;<br />
+      &lt;City/&gt;<br />
+      &lt;StateOrProvince/&gt;<br />
+      &lt;PostCode/&gt;<br />
+      &lt;Country/&gt;<br />
+      &lt;/ContactAddress&gt;<br />
+      &lt;ContactVoiceTelephone/&gt;<br />
+      &lt;ContactFacsimileTelephone/&gt;<br />
+      &lt;ContactElectronicMailAddress&gt;martinover@gmx.de&lt;/ContactElectronicMailAddress&gt;<br />
+      &lt;/ContactInformation&gt;<br />
+      &lt;Fees&gt;NONE&lt;/Fees&gt;<br />
+      &lt;AccessConstraints&gt;NONE&lt;/AccessConstraints&gt;<br />
+      &lt;/Service&gt;<br />
+      &lt;Capability&gt;<br />
+      &lt;Request&gt;<br />
+      &lt;GetCapabilities&gt;<br />
+      &lt;Format&gt;application/vnd.ogc.wms_xml&lt;/Format&gt;<br />
+      &lt;DCPType&gt;<br />
+      &lt;HTTP&gt;<br />
+      &lt;Get&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?SERVICE=WMS&amp;amp;&quot;/&gt;<br />
+      &lt;/Get&gt;<br />
+      &lt;Post&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?SERVICE=WMS&amp;amp;&quot;/&gt;<br />
+      &lt;/Post&gt;<br />
+      &lt;/HTTP&gt;<br />
+      &lt;/DCPType&gt;<br />
+      &lt;/GetCapabilities&gt;<br />
+      &lt;GetMap&gt;<br />
+      &lt;Format&gt;image/png&lt;/Format&gt;<br />
+      &lt;Format&gt;application/atom xml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/atom+xml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/openlayers&lt;/Format&gt;<br />
+      &lt;Format&gt;application/pdf&lt;/Format&gt;<br />
+      &lt;Format&gt;application/rss xml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/rss+xml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/vnd.google-earth.kml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/vnd.google-earth.kml xml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/vnd.google-earth.kml+xml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/vnd.google-earth.kmz&lt;/Format&gt;<br />
+      &lt;Format&gt;application/vnd.google-earth.kmz xml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/vnd.google-earth.kmz+xml&lt;/Format&gt;<br />
+      &lt;Format&gt;atom&lt;/Format&gt;<br />
+      &lt;Format&gt;image/geotiff&lt;/Format&gt;<br />
+      &lt;Format&gt;image/geotiff8&lt;/Format&gt;<br />
+      &lt;Format&gt;image/gif&lt;/Format&gt;<br />
+      &lt;Format&gt;image/jpeg&lt;/Format&gt;<br />
+      &lt;Format&gt;image/png8&lt;/Format&gt;<br />
+      &lt;Format&gt;image/svg&lt;/Format&gt;<br />
+      &lt;Format&gt;image/svg xml&lt;/Format&gt;<br />
+      &lt;Format&gt;image/svg+xml&lt;/Format&gt;<br />
+      &lt;Format&gt;image/tiff&lt;/Format&gt;<br />
+      &lt;Format&gt;image/tiff8&lt;/Format&gt;<br />
+      &lt;Format&gt;kml&lt;/Format&gt;<br />
+      &lt;Format&gt;kmz&lt;/Format&gt;<br />
+      &lt;Format&gt;openlayers&lt;/Format&gt;<br />
+      &lt;Format&gt;rss&lt;/Format&gt;<br />
+      &lt;DCPType&gt;<br />
+      &lt;HTTP&gt;<br />
+      &lt;Get&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?SERVICE=WMS&amp;amp;&quot;/&gt;<br />
+      &lt;/Get&gt;<br />
+      &lt;/HTTP&gt;<br />
+      &lt;/DCPType&gt;<br />
+      &lt;/GetMap&gt;<br />
+      &lt;GetFeatureInfo&gt;<br />
+      &lt;Format&gt;text/plain&lt;/Format&gt;<br />
+      &lt;Format&gt;application/vnd.ogc.gml&lt;/Format&gt;<br />
+      &lt;Format&gt;text/html&lt;/Format&gt;<br />
+      &lt;DCPType&gt;<br />
+      &lt;HTTP&gt;<br />
+      &lt;Get&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?SERVICE=WMS&amp;amp;&quot;/&gt;<br />
+      &lt;/Get&gt;<br />
+      &lt;Post&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?SERVICE=WMS&amp;amp;&quot;/&gt;<br />
+      &lt;/Post&gt;<br />
+      &lt;/HTTP&gt;<br />
+      &lt;/DCPType&gt;<br />
+      &lt;/GetFeatureInfo&gt;<br />
+      &lt;DescribeLayer&gt;<br />
+      &lt;Format&gt;application/vnd.ogc.wms_xml&lt;/Format&gt;<br />
+      &lt;DCPType&gt;<br />
+      &lt;HTTP&gt;<br />
+      &lt;Get&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?SERVICE=WMS&amp;amp;&quot;/&gt;<br />
+      &lt;/Get&gt;<br />
+      &lt;/HTTP&gt;<br />
+      &lt;/DCPType&gt;<br />
+      &lt;/DescribeLayer&gt;<br />
+      &lt;GetLegendGraphic&gt;<br />
+      &lt;Format&gt;image/png&lt;/Format&gt;<br />
+      &lt;Format&gt;image/jpeg&lt;/Format&gt;<br />
+      &lt;Format&gt;image/gif&lt;/Format&gt;<br />
+      &lt;DCPType&gt;<br />
+      &lt;HTTP&gt;<br />
+      &lt;Get&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?SERVICE=WMS&amp;amp;&quot;/&gt;<br />
+      &lt;/Get&gt;<br />
+      &lt;/HTTP&gt;<br />
+      &lt;/DCPType&gt;<br />
+      &lt;/GetLegendGraphic&gt;<br />
+      &lt;GetStyles&gt;<br />
+      &lt;Format&gt;application/vnd.ogc.sld+xml&lt;/Format&gt;<br />
+      &lt;DCPType&gt;<br />
+      &lt;HTTP&gt;<br />
+      &lt;Get&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?SERVICE=WMS&amp;amp;&quot;/&gt;<br />
+      &lt;/Get&gt;<br />
+      &lt;/HTTP&gt;<br />
+      &lt;/DCPType&gt;<br />
+      &lt;/GetStyles&gt;<br />
+      &lt;/Request&gt;<br />
+      &lt;Exception&gt;<br />
+      &lt;Format&gt;application/vnd.ogc.se_xml&lt;/Format&gt;<br />
+      &lt;Format&gt;application/vnd.ogc.se_inimage&lt;/Format&gt;<br />
+      &lt;/Exception&gt;<br />
+      &lt;UserDefinedSymbolization SupportSLD=&quot;1&quot; UserLayer=&quot;1&quot; UserStyle=&quot;1&quot; RemoteWFS=&quot;1&quot;/&gt;<br />
+      &lt;Layer&gt;<br />
+      &lt;Title&gt;Portrayal Services Test WMS&lt;/Title&gt;<br />
+      &lt;Abstract&gt;A compliant implementation of WMS plus most of the SLD extension (dynamic styling).&lt;/Abstract&gt;<br />
+      &lt;!--All supported EPSG projections:--&gt;<br />
+      &lt;SRS&gt;AUTO:42001&lt;/SRS&gt;<br />
+      ...<br />
+      &lt;SRS&gt;EPSG:42303&lt;/SRS&gt;<br />
+      &lt;LatLonBoundingBox minx=&quot;7.292&quot; miny=&quot;51.281&quot; maxx=&quot;7.297&quot; maxy=&quot;51.285&quot;/&gt;<br />
+      &lt;Layer queryable=&quot;1&quot;&gt;<br />
+      &lt;Name&gt;oge:natural&lt;/Name&gt;<br />
+      &lt;Title&gt;natural&lt;/Title&gt;<br />
+      &lt;Abstract/&gt;<br />
+      &lt;KeywordList/&gt;<br />
+      &lt;SRS&gt;EPSG:4326&lt;/SRS&gt;<br />
+      &lt;!--WKT definition of this CRS:<br />
+      GEOGCS[&quot;WGS 84&quot;, <br />
+      DATUM[&quot;World Geodetic System 1984&quot;, <br />
+      SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], <br />
+      AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], <br />
+      PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], <br />
+      UNIT[&quot;degree&quot;, 0.017453292519943295], <br />
+      AXIS[&quot;Geodetic longitude&quot;, EAST], <br />
+      AXIS[&quot;Geodetic latitude&quot;, NORTH], <br />
+      AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]--&gt;<br />
+      &lt;LatLonBoundingBox minx=&quot;7.295&quot; miny=&quot;51.282&quot; maxx=&quot;7.297&quot; maxy=&quot;51.284&quot;/&gt;<br />
+      &lt;BoundingBox SRS=&quot;EPSG:4326&quot; minx=&quot;7.295&quot; miny=&quot;51.282&quot; maxx=&quot;7.297&quot; maxy=&quot;51.284&quot;/&gt;<br />
+      &lt;Style&gt;<br />
+      &lt;Name&gt;polygon&lt;/Name&gt;<br />
+      &lt;Title&gt;Default Polygon&lt;/Title&gt;<br />
+      &lt;Abstract&gt;A sample style that draws a polygon&lt;/Abstract&gt;<br />
+      &lt;LegendURL width=&quot;20&quot; height=&quot;20&quot;&gt;<br />
+      &lt;Format&gt;image/png&lt;/Format&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?request=GetLegendGraphic&amp;amp;format=image%2Fpng&amp;amp;width=20&amp;amp;height=20&amp;amp;layer=natural&quot;/&gt;<br />
+      &lt;/LegendURL&gt;<br />
+      &lt;/Style&gt;<br />
+      &lt;/Layer&gt;<br />
+      &lt;Layer queryable=&quot;1&quot;&gt;<br />
+      &lt;Name&gt;oge:points&lt;/Name&gt;<br />
+      &lt;Title&gt;points&lt;/Title&gt;<br />
+      &lt;Abstract/&gt;<br />
+      &lt;KeywordList/&gt;<br />
+      &lt;SRS&gt;EPSG:4326&lt;/SRS&gt;<br />
+      &lt;!--WKT definition of this CRS:<br />
+      GEOGCS[&quot;WGS 84&quot;, <br />
+      DATUM[&quot;World Geodetic System 1984&quot;, <br />
+      SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], <br />
+      AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], <br />
+      PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], <br />
+      UNIT[&quot;degree&quot;, 0.017453292519943295], <br />
+      AXIS[&quot;Geodetic longitude&quot;, EAST], <br />
+      AXIS[&quot;Geodetic latitude&quot;, NORTH], <br />
+      AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]--&gt;<br />
+      &lt;LatLonBoundingBox minx=&quot;7.292&quot; miny=&quot;51.282&quot; maxx=&quot;7.296&quot; maxy=&quot;51.285&quot;/&gt;<br />
+      &lt;BoundingBox SRS=&quot;EPSG:4326&quot; minx=&quot;7.292&quot; miny=&quot;51.282&quot; maxx=&quot;7.296&quot; maxy=&quot;51.285&quot;/&gt;<br />
+      &lt;Style&gt;<br />
+      &lt;Name&gt;point&lt;/Name&gt;<br />
+      &lt;Title&gt;Default Point&lt;/Title&gt;<br />
+      &lt;Abstract&gt;A sample style that draws a point&lt;/Abstract&gt;<br />
+      &lt;LegendURL width=&quot;20&quot; height=&quot;20&quot;&gt;<br />
+      &lt;Format&gt;image/png&lt;/Format&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?request=GetLegendGraphic&amp;amp;format=image%2Fpng&amp;amp;width=20&amp;amp;height=20&amp;amp;layer=points&quot;/&gt;<br />
+      &lt;/LegendURL&gt;<br />
+      &lt;/Style&gt;<br />
+      &lt;/Layer&gt;<br />
+      &lt;Layer queryable=&quot;1&quot;&gt;<br />
+      &lt;Name&gt;oge:roads&lt;/Name&gt;<br />
+      &lt;Title&gt;roads&lt;/Title&gt;<br />
+      &lt;Abstract/&gt;<br />
+      &lt;KeywordList/&gt;<br />
+      &lt;SRS&gt;EPSG:4326&lt;/SRS&gt;<br />
+      &lt;!--WKT definition of this CRS:<br />
+      GEOGCS[&quot;WGS 84&quot;, <br />
+      DATUM[&quot;World Geodetic System 1984&quot;, <br />
+      SPHEROID[&quot;WGS 84&quot;, 6378137.0, 298.257223563, AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]], <br />
+      AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]], <br />
+      PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], <br />
+      UNIT[&quot;degree&quot;, 0.017453292519943295], <br />
+      AXIS[&quot;Geodetic longitude&quot;, EAST], <br />
+      AXIS[&quot;Geodetic latitude&quot;, NORTH], <br />
+      AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]--&gt;<br />
+      &lt;LatLonBoundingBox minx=&quot;7.292&quot; miny=&quot;51.281&quot; maxx=&quot;7.297&quot; maxy=&quot;51.285&quot;/&gt;<br />
+      &lt;BoundingBox SRS=&quot;EPSG:4326&quot; minx=&quot;7.292&quot; miny=&quot;51.281&quot; maxx=&quot;7.297&quot; maxy=&quot;51.285&quot;/&gt;<br />
+      &lt;Style&gt;<br />
+      &lt;Name&gt;line&lt;/Name&gt;<br />
+      &lt;Title&gt;Default Line&lt;/Title&gt;<br />
+      &lt;Abstract&gt;A sample style that draws a line&lt;/Abstract&gt;<br />
+      &lt;LegendURL width=&quot;20&quot; height=&quot;20&quot;&gt;<br />
+      &lt;Format&gt;image/png&lt;/Format&gt;<br />
+      &lt;OnlineResource xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;   xlink:type=&quot;simple&quot;   xlink:href=&quot;http://map-server.org:8080/geoserver/oge/wms?request=GetLegendGraphic&amp;amp;format=image%2Fpng&amp;amp;width=20&amp;amp;height=20&amp;amp;layer=roads&quot;/&gt;<br />
+      &lt;/LegendURL&gt;<br />
+      &lt;/Style&gt;<br />
+      &lt;/Layer&gt;<br />
+      &lt;/Layer&gt;<br />
+      &lt;/Capability&gt;<br />
+      &lt;/WMT_MS_Capabilities&gt;<br />
+    </p>
+  </div>
+  </div>
+<img src="images/logo.jpg" alt="logo" width="133" height="125" />
+<div id="apDiv1">
+  <h1 align="center">Web Portrayal Services</h1>
+  <h2 align="center">Testplattform für WMS, SLD, SE &amp; FE</h2>
+  </div>
+<!-- InstanceEndEditable -->
+
+
+<link rel="stylesheet" type="text/css" href="css/cssverticalmenu.css" />
+
+<script type="text/javascript" src="js/cssverticalmenu.js">  
+
+/***********************************************
+
+* CSS Vertical List Menu- by JavaScript Kit (www.javascriptkit.com)
+* Menu interface credits: http://www.dynamicdrive.com/style/csslibrary/item/glossy-vertical-menu/ 
+* This notice must stay intact for usage
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+
+***********************************************/
+
+</script>
+
+<div id="navi">
+<ul id="verticalmenu" class="glossymenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="http://www.vde-verlag.de/buecher/537502/web-portrayal-services.html" >Das Buch</a></li>
+
+
+<li><a >WMS-SLD Beispiele:</a></li>
+<li><a>Punktgeometrien</a>
+        <ul>
+    	<li><a href="beispiel_210/beispiel_210_web_client.html">Einfache Punktsymbolisierung: Seite 210</a></li>
+    	<li><a href="beispiel_210_2/beispiel_210_2_web_client.html">Punktsymbolisierung mit Online Referenz: Seite 210</a></li>
+        <li><a href="beispiel_224/beispiel_224_web_client.html">Punktsymbolisierung mit Text: Seite 224</a></li>
+    	</ul>
+</li>        
+<li><a>Liniengeometrien</a>
+        <ul>
+    	<li><a href="beispiel_213/beispiel_213_web_client.html">Einfache Liniensymbolisierung: Seite 213</a></li>
+    	<li><a href="beispiel_215/beispiel_215_web_client.html">Liniensymbolisierung mit GraphicFill Elementen: Seite 215</a></li>
+       	<li><a href="beispiel_216/beispiel_216_web_client.html">Liniensymbolisierung mit GraphicStroke Elementen: Seite 216</a></li>
+    	</ul>
+</li>       
+<li><a>Flächengeometrien</a>
+        <ul>
+    	<li><a href="beispiel_218/beispiel_218_web_client.html">Einfache Polygonsymbolisierung: Seite 218</a></li>
+      	<li><a href="beispiel_219/beispiel_219_web_client.html">Polygonsymbolisierung mit Flächenfüllmuster: Seite 219</a></li>
+        <li><a href="beispiel_196/beispiel_196_web_client.html">Polygonsymbolisierung mit Filter: Seite 196</a></li> 
+    	</ul>
+</li> 
+<li><a>Raster</a>
+        <ul>
+    	  	<li><a href="beispiel_227/beispiel_227_web_client.html">Rasterdarstellung mittles ChannelSelection: Seite 227</a></li>
+        <li><a href="beispiel_228/beispiel_228_web_client.html">Rasterdarstellung mit Kontrastdehnung: Seite 228</a></li>
+    	<li><a href="beispiel_229/beispiel_229_web_client.html">Rasterdarstelung mit ColorMap: Seite 229</a></li>
+    	</ul>
+</li>   
+<li><a>Multilayer</a>
+        <ul>
+    	<li><a href="beispiel_bunt/beispiel_bunt_web_client.html">Joe's Blue Lake Vicinity Map in Farbe</a></li>
+        <li><a href="beispiel_bw/beispiel_bw_web_client.html">Joe's Blue Lake Vicinity Map in Schwarz-weiß</a></li>
+       	</ul>
+</li> 
+<li><a href="capabilities.html" >WMS Capabilities</a></li>
+
+<li><a href="daten_tabellen.html" >WMS Daten Tabellen</a></li>
+<li><a href="http://wiki.opengis-essentials.de/opengis-essentialsWiki/StartSeite">Wiki</a></li>
+<li><a href="#">Links</a>
+    <ul>
+    <li><a href="http://www.opengeospatial.org/standards">OGC Standards und Spezifikationen</a></li>
+    <li><a href="http://www.isotc211.org">ISO/TC 211 Geographic Information/Geomatics</a></li>
+	</ul>
+</li>
+<li><a href="hilfe.html" >Hilfe</a></li>
+<li><a href="kontakt.html">Kontakt</a></li>
+<li><a href="impressum.html">Impressum</a></li>
+</ul>
+</div>
+</body>
+<!-- InstanceEnd --></html>

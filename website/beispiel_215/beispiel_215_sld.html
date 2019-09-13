@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SLD</title>
+</head>
+<body>
+<form name="formularSLD">
+
+  <p><strong>SLD_BODY</strong></p>
+
+  <textarea name="feld2" cols="140" rows="15">
+&amp;SLD_BODY=
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor version="1.1.0" 
+ xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd" 
+ xmlns="http://www.opengis.net/sld" 
+ xmlns:ogc="http://www.opengis.net/ogc" 
+ xmlns:se="http://www.opengis.net/se" 
+ xmlns:xlink="http://www.w3.org/1999/xlink" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<NamedLayer>
+<se:Name>oge:roads</se:Name>
+<UserStyle>
+<se:FeatureTypeStyle>
+<se:Rule>
+<se:LineSymbolizer>
+<se:Stroke>
+<se:GraphicFill>
+<se:Graphic>
+<se:Mark>
+<se:WellKnownName>arrow</se:WellKnownName>
+<se:Fill>
+<se:SvgParameter name="fill">#303030</se:SvgParameter>
+</se:Fill>
+</se:Mark>
+<se:Size>10</se:Size>
+</se:Graphic>
+</se:GraphicFill>
+<se:SvgParameter name="stroke-width">10</se:SvgParameter>
+</se:Stroke>
+</se:LineSymbolizer>
+</se:Rule>
+</se:FeatureTypeStyle>
+</UserStyle>
+</NamedLayer>
+</StyledLayerDescriptor>
+</textarea>
+</form>
+
+ <script language="javascript" type="text/javascript">
+   parent.leftFrame.onload = function(){parent.leftFrame.getValue();};
+ </script>
+ 
+</form>
+</body>
+</html>
+

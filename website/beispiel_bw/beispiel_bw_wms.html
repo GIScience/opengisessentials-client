@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WMS</title>
+<style type="text/css">
+<!--
+#apDiv1 {
+	position:absolute;
+	width:401px;
+	height:54px;
+	z-index:1;
+	left: 198px;
+	top: 43px;
+}
+-->
+</style>
+
+<script language="javascript" type="text/javascript" src="../js/OpenLayers-2.11/OpenLayers.js"></script>
+<script language="javascript" type="text/javascript" src="../js/postGetMapRequest.js"></script>
+
+</head>
+
+<body>
+
+<h3><a href="../index.html" target="_top">Home	</a></h3>
+
+<input type="button" onclick="getValue()" value="Karte neu ausgeben"/>
+</br>
+<p><strong>WMS URL Komponenten</strong></p>
+
+<form name="formularWMS">
+  <textarea name="feld" cols="70" rows="10">http://watzmann.geog.uni-heidelberg.de/oge-wms?service=WMS
+  &amp;version=1.1.0
+  &amp;request=GetMap
+  &amp;layers=oge:jm_mapneatlines,oge:jm_forests,oge:jm_streams,oge:jm_lakes,oge:jm_namedplaces,oge:jm_ponds,oge:jm_roadsegments,oge:jm_dividedroutes,oge:jm_buildingfootprints,oge:jm_buildingpositions,oge:jm_bridges
+  &amp;styles=
+  &amp;bbox=0,0,100,50
+  &amp;width=400
+  &amp;height=200
+  &amp;srs=EPSG:32214
+  &amp;format=application/openlayers
+  </textarea>
+</form>
+
+
+
+
+  <div id="apDiv1"><strong>Daten:</strong> <a href="http://www.opengeospatial.org/compliance/downloads" target="_blank"><img src="../images/OGCSFSQL_Logo.png" alt="OGC SFSQL 1.1. Compliance Test Suite" width="115" height="38" /></a> <strong>Kartenserver:</strong><a href="http://geoserver.org/display/GEOS/Welcome" target="_blank"><img src="../images/logo_geoserver.jpg" alt="logo_geoserver" width="128" height="41" /></a></div>
+</body>
+</html>
+
